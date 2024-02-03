@@ -1,0 +1,48 @@
+page-login {
+
+  .scroll-content {
+    padding: 0 43pt;
+  }
+
+  .logo{
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    text-align: center;
+    width: 90%;
+
+
+    img {
+      width: 138pt;
+    }
+  }
+
+  .login {
+    position: absolute;
+    top: 33%;
+    left: 5%;
+    width: 90%;
+  }
+
+  .skip {
+    background: rgba(0,0,0,0.1);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 37px 0;
+
+    .next-button {
+      background: rgba(0,0,0,0.2);
+      width: 48pt;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      font-size: 17pt;
+      color: #FFF;
+      padding-top: 40pt;
+    }
+  }
+}

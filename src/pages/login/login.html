@@ -1,0 +1,31 @@
+<ion-content>
+
+    <ion-row align-items-center class="logo">
+        <ion-col align-self-center>
+            <img src="assets/imgs/logo-white.png"/>
+        </ion-col>
+    </ion-row>
+
+    <ion-row class="login">
+        <ion-col>
+            <h4 text-center>I have a wallet</h4>
+            <ion-list>
+                <ion-item>
+                    <ion-input [(ngModel)]="privateKey" (ngModelChange)="onPrivateKeyChange($event)" type="text" placeholder="Private Key" class="icon-input" (keydown)="keyHelper.onHexKeyDown($event, 64)"></ion-input>
+                </ion-item>
+                <div class="input-icon">0x</div>
+                <div *ngIf="error" class="error center">{{error}}</div>
+            </ion-list>
+        </ion-col>
+    </ion-row>
+
+    <ion-row class="skip">
+        <ion-col>
+            <h4>I don't have a wallet</h4>
+        </ion-col>
+        <ion-col col-auto class="next-button" (click)="next()">
+            <ion-icon name="ios-arrow-forward"></ion-icon>
+        </ion-col>
+    </ion-row>
+
+</ion-content>

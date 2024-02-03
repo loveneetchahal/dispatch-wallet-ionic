@@ -1,0 +1,36 @@
+<ion-menu [content]="content" type="push">
+
+    <ion-content>
+        <ion-row justify-content-end>
+            <div class="new-wallet" (click)="newWallet()">
+                +
+            </div>
+        </ion-row>
+
+        <img src="assets/imgs/oval-2@3x.png">
+        <ion-input *ngIf="config.defaultAccount" type="text" [(ngModel)]="config.defaultAccount.name" (ngModelChange)="onNameChange($event)"></ion-input>
+
+        <ion-row>
+            <ion-col class="ellipsis">
+                {{selectedAddress}}
+            </ion-col>
+            <ion-col col-auto>
+                <div class="copy-button" (click)="copyAddressToClipboard()"></div>
+            </ion-col>
+        </ion-row>
+
+        <ion-list radio-group [(ngModel)]="selectedAddress" (ngModelChange)="onAccountChange($event)" margin-top>
+            <ion-item *ngFor="let account of config.accounts">
+                <ion-label color="primary">{{account.name}}</ion-label>
+                <ion-radio [value]="account.address"></ion-radio>
+            </ion-item>
+        </ion-list>
+
+        <div class="key-copy-button">
+            <a (click)="copyPrivateKeyToClipboard()">Copy private key <span></span></a>
+        </div>
+    </ion-content>
+</ion-menu>
+
+<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

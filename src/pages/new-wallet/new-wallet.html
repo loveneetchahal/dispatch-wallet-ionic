@@ -1,0 +1,32 @@
+<ion-header>
+
+    <ion-navbar>
+        <img src="assets/imgs/logo-no-rings.png" class="header-logo" class="header-logo">
+    </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+    <div class="bg-dark" padding>
+        <div>
+            <h3 margin-top>Add Existing Wallet</h3>
+        </div>
+
+        <ion-list class="mb0">
+            <ion-item>
+                <ion-input [(ngModel)]="privateKey" (ngModelChange)="onPrivateKeyChange($event)" type="text" placeholder="Private Key" class="icon-input" (keydown)="keyHelper.onHexKeyDown($event, 64)"></ion-input>
+            </ion-item>
+            <div class="input-icon">0x</div>
+            <div *ngIf="error" class="error center">{{error}}</div>
+        </ion-list>
+    </div>
+
+    <div class="bg-dark mt60" padding>
+        <h3>
+            Generate New Wallet
+        </h3>
+        <button ion-button (click)="newAccount()" margin-top>
+            Generate
+        </button>
+    </div>
+</ion-content>

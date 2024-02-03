@@ -1,0 +1,42 @@
+<table>
+    <tr>
+        <td>
+            Hash:
+        </td>
+        <td>
+            {{transaction.hash}}
+        </td>
+    </tr>
+    <tr *ngIf="transaction?.address">
+        <td>
+            Contract<br/>Address:
+        </td>
+        <td>
+            {{transaction.address}}
+        </td>
+    </tr>
+    <tr *ngIf="sent && transaction.to">
+        <td>
+            To:
+        </td>
+        <td>
+            {{transaction.to}}
+        </td>
+    </tr>
+    <tr *ngIf="!sent">
+        <td>
+            From:
+        </td>
+        <td>
+        {{transaction.from}}
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Signature:
+        </td>
+        <td>
+            {{transaction.signature}}
+        </td>
+    </tr>
+</table>

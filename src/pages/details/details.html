@@ -1,0 +1,49 @@
+<ion-header>
+
+    <ion-navbar>
+        <ion-title>Details</ion-title>
+    </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+
+    <ion-grid>
+        <ion-row>
+            <strong>Hash:</strong><br>
+            {{transaction.hash}}
+        </ion-row>
+        <ion-row *ngIf="transaction?.address">
+            <strong>Contract Address:</strong><br>
+            {{transaction.address}}
+        </ion-row>
+        <ion-row>
+            <strong>From Address:</strong>
+            <br>{{transaction.from}}
+        </ion-row>
+        <ion-row *ngIf="transaction?.fromName">
+            <strong>From Name:</strong><br>
+            {{transaction.fromName}}
+        </ion-row>
+        <ion-row>
+            <strong>To Address:</strong><br>
+            {{transaction.to}}
+        </ion-row>
+        <ion-row *ngIf="transaction?.toName">
+            <strong>To Name:</strong><br>
+            {{transaction.toName}}
+        </ion-row>
+        <ion-row>
+            <strong>Value:</strong><br>
+            {{transaction.value}}
+        </ion-row>
+        <ion-row>
+            <strong>Time:</strong><br>
+            {{transaction.time}}
+        </ion-row>
+        <ion-row>
+            <strong>Signature:</strong><br>
+            {{transaction.signature}}
+        </ion-row>
+    </ion-grid>
+</ion-content>

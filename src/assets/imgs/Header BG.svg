@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="375px" height="175px" viewBox="0 0 375 175" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>Header BG</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="375" height="175"></rect>
+        <filter x="-1.9%" y="-4.0%" width="103.7%" height="108.0%" filterUnits="objectBoundingBox" id="filter-3">
+            <feGaussianBlur stdDeviation="6.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Enter-Token-Value-to-Send" transform="translate(0.000000, -49.000000)">
+            <g id="Header-BG" transform="translate(0.000000, 49.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Mask" opacity="0.0174365942">
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                </g>
+                <g id="Token-Symbole" mask="url(#mask-2)" fill="#FFFFFF" opacity="0.0793138587">
+                    <g transform="translate(-55.000000, -22.000000)" id="Combined-Shape">
+                        <path d="M109.5,219 C49.0248199,219 0,169.97518 0,109.5 C0,49.0248199 49.0248199,0 109.5,0 C169.97518,0 219,49.0248199 219,109.5 C219,169.97518 169.97518,219 109.5,219 Z M117.02521,102.965679 L138,102.965679 L138,80.7067083 L117.02521,80.7067083 L117.02521,57 L88.162465,57 L88.162465,80.7067083 L74,80.7067083 L74,102.965679 L88.3417367,102.965679 L88.3417367,140.968799 C88.3417367,145.794616 88.8795464,150.167947 89.9551821,154.088924 C91.0308177,158.0099 92.7936385,161.387921 95.2436975,164.223089 C97.6937564,167.058257 100.950493,169.229842 105.014006,170.73791 C109.077518,172.245977 114.097076,173 120.072829,173 C123.180221,173 126.287566,172.728552 129.394958,172.185647 C132.50235,171.642743 135.071885,171.009364 137.103641,170.285491 L136.745098,148.569423 C135.669462,149.052004 134.324938,149.413935 132.711485,149.655226 C131.098031,149.896517 129.574237,150.017161 128.140056,150.017161 C123.957029,150.017161 121.058832,148.961529 119.445378,146.850234 C117.831925,144.738939 117.02521,141.572044 117.02521,137.349454 L117.02521,102.965679 Z"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

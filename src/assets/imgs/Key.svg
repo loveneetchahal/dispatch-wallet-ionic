@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="17px" height="18px" viewBox="0 0 17 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>Key</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Entry-Screen" transform="translate(-43.000000, -313.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="Group-3" transform="translate(43.000000, 311.000000)">
+                <g id="Group-6">
+                    <g id="Key" transform="translate(0.000000, 2.000000)">
+                        <path d="M6,12 C2.6862915,12 0,9.3137085 0,6 C0,2.6862915 2.6862915,0 6,0 C9.3137085,0 12,2.6862915 12,6 C12,9.3137085 9.3137085,12 6,12 Z M6,10.1538462 C8.29410588,10.1538462 10.1538462,8.29410588 10.1538462,6 C10.1538462,3.70589412 8.29410588,1.84615385 6,1.84615385 C3.70589412,1.84615385 1.84615385,3.70589412 1.84615385,6 C1.84615385,8.29410588 3.70589412,10.1538462 6,10.1538462 Z" id="Oval"></path>
+                        <polygon id="Path-2" points="9 10.3487259 10.4800768 9 17 14.9413059 13.643423 18 12.1633462 16.6512741 14.0398464 14.9413059"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
